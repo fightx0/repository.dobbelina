@@ -51,8 +51,7 @@ def BGVersion():
 
 @utils.url_dispatcher.register('80')
 def BGMain():
-    BGVersion()
-    bgversion = addon.getSetting('bgversion')
+    bgversion = '1589461492752'
     utils.addDir('[COLOR hotpink]Categories[/COLOR]','https://beeg.com/api/v6/'+bgversion+'/index/main/0/pc',83,'','')
     utils.addDir('[COLOR hotpink]Channels[/COLOR]','https://beeg.com/api/v6/'+bgversion+'/channels',85,'','')
     utils.addDir('[COLOR hotpink]Search[/COLOR]','https://beeg.com/api/v6/'+bgversion+'/index/tag/0/pc?tag=',84,'','')
